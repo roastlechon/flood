@@ -9,6 +9,7 @@ WORKDIR $WORKDIR
 # Generate node_modules
 COPY package.json ./package.json
 COPY package-lock.json ./package-lock.json
+COPY ABOUT.md ./ABOUT.md
 RUN apk add --no-cache --virtual=build-dependencies \
     python \
     build-base && \
